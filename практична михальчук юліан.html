@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Захід</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background: #f4f4f4;
+            border-radius: 5px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        .speaker {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .speaker img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        form label, form input, form button {
+            margin-bottom: 10px;
+        }
+
+        form button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#program">Програма</a></li>
+                <li><a href="#speakers">Спікери</a></li>
+                <li><a href="#registration">Реєстрація</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="home">
+        <h1>Ласкаво просимо на захід!</h1>
+        <p>Долучайтесь до нашої події, яка відбудеться <strong>25 грудня 2024 року</strong>.</p>
+        
+    </section>
+
+    
+    <section id="program">
+        <h2>Програма</h2>
+        <ul>
+            <li>10:00 - Реєстрація</li>
+            <li>11:00 - Відкриття заходу</li>
+            <li>13:00 - Обід</li>
+            <li>14:00 - Панельна дискусія</li>
+        </ul>
+    </section>
+
+    
+    <section id="speakers">
+        <h2>Спікери</h2>
+        <div class="speaker">
+            <img src="choppa.webp" alt="Спікер 1">
+            <h3>Іван Іваненко</h3>
+            <p>Експерт у сфері ІТ з 15-річним досвідом.</p>
+        </div>
+    </section>
+
+    
+    <section id="registration">
+        <h2>Реєстрація</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <button type="submit">Зареєструватися</button>
+        </form>
+    </section>
+
+    
+    <section id="contacts">
+        <h2>Контакти</h2>
+        <p>Email: yulianmykhalchyk@gmail.com</p>
+        <p>Телефон: +380 99 646 19 68</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Усі права захищено.</p>
+    </footer>
+</body>
+</html>
